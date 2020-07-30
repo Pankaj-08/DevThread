@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    tools:context=".loginfragment">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            card_view:cardElevation="10dp"
+            android:elevation="8dp"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:background="@drawable/edittextboreder"
+            android:id="@+id/email"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:elevation="7dp"
+
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:padding="10dp" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            card_view:cardElevation="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+                android:background="@drawable/edittextboreder"
+            android:elevation="7dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:onClick="buttonClick"
+            android:id="@+id/log"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/buttonback"
+            android:text="LOGIN"
+            android:textColor="@android:color/white"
+            tools:ignore="OnClick" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Forgot Password?"
+            android:textColor="#1565C0"
+            android:textSize="15dp" />
+    </LinearLayout>
+</FrameLayout>
